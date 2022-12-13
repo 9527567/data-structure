@@ -14,23 +14,12 @@ class ListNode
 public:
     using value_type = T;
 
-    ListNode(T val, std::shared_ptr<ListNode> next)
-    {
-        this->val = val;
-        this->next = next;
-    }
-
-    explicit ListNode(T val)
-    {
-        this->val = val;
-        this->next = nullptr;
-    }
-
+    ListNode(T value, std::shared_ptr<ListNode> nextPtr) : val(value), next(nextPtr){} ;
+    explicit ListNode(T value) : val(value), next(nullptr) {};
     ListNode() = default;
-
     ~ListNode() = default;
 
-    T val;
+	T val;
     std::shared_ptr<ListNode> next;
 };
 
