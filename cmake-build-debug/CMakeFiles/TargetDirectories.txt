@@ -1,0 +1,3 @@
+/home/jack/workhome/data-structure/cmake-build-debug/CMakeFiles/main.dir
+/home/jack/workhome/data-structure/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jack/workhome/data-structure/cmake-build-debug/CMakeFiles/rebuild_cache.dir
