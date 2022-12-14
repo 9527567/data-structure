@@ -4,10 +4,10 @@
 int main(int argc, char **argv)
 {
     std::vector<int> input {1,2,3,4,5,6};
-    auto singlelinkedlist = SingleLinkedList<int>(input);
-    while(singlelinkedlist.head->next != nullptr)
+	SingleLinkedList<int> singleLinkedList = SingleLinkedList<int>(input);
+    while(singleLinkedList.head->next != nullptr)
     {
-        singlelinkedlist.head = singlelinkedlist.head->next;
-        std::cout << singlelinkedlist.head->val << std::endl;
+	    singleLinkedList.head = singleLinkedList.head->next;
+        std::cout << singleLinkedList.head->val << std::endl;
     }
 }
