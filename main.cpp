@@ -6,10 +6,12 @@ int main(int argc, char **argv)
 {
     std::vector<int> input {1,2,3,4,5,6};
 	SingleLinkedList<int> singleLinkedList = SingleLinkedList<int>(input);
-    while(singleLinkedList.head->next != nullptr)
+	singleLinkedList.addValToNthPos(9,2);
+	singleLinkedList.delNodeNthPos(3);
+    while(singleLinkedList.head != nullptr)
     {
-	    singleLinkedList.head = singleLinkedList.head->next;
         std::cout << singleLinkedList.head->val << std::endl;
+		singleLinkedList.head = singleLinkedList.head->next;
     }
     std::vector<std::optional<int>> tree = {1,2,3,4,5,6,std::nullopt};
 }
