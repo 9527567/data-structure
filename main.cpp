@@ -2,12 +2,12 @@
 #include <vector>
 #include <optional>
 #include <iostream>
+#include <string>
 int main(int argc, char **argv)
 {
     std::vector<int> input {1,2,3,4,5,6};
 	SingleLinkedList<int> singleLinkedList = SingleLinkedList<int>(input);
-	singleLinkedList.addValToNthPos(9,2);
-	singleLinkedList.delNodeNthPos(3);
+	singleLinkedList.reverseList();
     while(singleLinkedList.head != nullptr)
     {
         std::cout << singleLinkedList.head->val << std::endl;

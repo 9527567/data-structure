@@ -94,6 +94,23 @@ public:
 		temp->next = temp->next->next;
 	}
 
+	// Reverse linked list
+	void reverseList()
+	{
+		std::shared_ptr<ListNode<value_type>> temp = nullptr;
+		std::shared_ptr<ListNode<value_type>> cur = head;
+		std::shared_ptr<ListNode<value_type>> pre = nullptr;
+
+		while(cur)
+		{
+			temp = cur->next;
+			cur->next = pre;
+			pre = cur;
+			cur = temp;
+		}
+		head = pre;
+	}
+
     std::shared_ptr<ListNode<value_type>> head = std::make_shared<ListNode<value_type>>();
 };
 
